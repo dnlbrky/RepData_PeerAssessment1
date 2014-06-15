@@ -2,7 +2,7 @@
 
 
 ## Loading and preprocessing the data
-First, set the working directory to the one containing the forked/cloned content from Github (http://github.com/rdpeng/RepData_PeerAssessment1):
+First, set the working directory to the one containing the locally forked/cloned content from Github (http://github.com/rdpeng/RepData_PeerAssessment1):
 
 ```r
 setwd("C:/Users/dlabar/Google Drive/Coursera/Data Science/RepData_PeerAssessment1")
@@ -158,7 +158,7 @@ ggplot(data=activity[!is.na(steps),list(steps=mean(steps)),by=interval], aes(x=i
 
 ![plot of chunk plot02](figure/plot02.png) 
 
-As can be seen from the plot, there are very few steps taken until Interval 500.  Then, until Interval 1900 or so, the range of steps is between roughly 25 and 100.  However there is a peak at **interval 835**, which has the maximum average number of steps (**206**).  Finally, the number of steps after Interval 1900 tapers back down to 0.
+As can be seen from the plot, there are very few steps taken until Interval 500.  Then, until Interval 1900 or so, the range of steps is between roughly 25 and 100.  However there is a peak at **Interval 835**, which has the maximum average number of steps (**206**).  Finally, the number of steps after Interval 1900 tapers back down to 0.
 
 ## Imputing missing values
 To test the effect of missing values, replace `NA` values of the step count with the mean value for that interval on that day of the week.  For example, if Interval 2355 is missing on 2012-11-30, use the mean value (1.143) for all Tuesdays during Interval 2355.
